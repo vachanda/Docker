@@ -65,5 +65,3 @@ RUN gem install foreman
 # Add lograte base template.
 ADD unicorn_logrotate.conf /tmp/unicorn_logrotate.conf
 ADD nginx_logrotate.conf /tmp/nginx_logrotate.conf
-ADD logrotate_crontab.conf /tmp/logrotate_crontab.conf
-RUN crontab /tmp/logrotate_crontab.conf
